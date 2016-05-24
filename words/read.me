@@ -1,0 +1,28 @@
+ Write a script that takes a file containing a number of words (one per line) and sorts them 
+by the number of times they occur in the file (descending order), but exclude words that only 
+occur once. Ignore the case of the words and filter out any punctuation characters. The output 
+should contain lines each with word and the number of times it occurs in the input separated 
+by space. 
+ 
+Example input: 
+microsoft 
+apple 
+microsoft. 
+Apple 
+security 
+microsoft 
+internet 
+ 
+Example output: 
+microsoft 3 
+apple 2 
+
+
+frequencies.py is a script
+words.txt is a input file
+words_count.txt is output file, can be deleted and script will create new one
+
+script was tested on Ubuntu 12.4LTS, Python 2.7.3
+>cd words  #script should be run from containing folder
+>python frequencies.py  #if permisions are problem: sudo python frequencies.py
+
