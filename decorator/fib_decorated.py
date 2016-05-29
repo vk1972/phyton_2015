@@ -120,7 +120,7 @@ def validate_cache(f, args):
     _f(args)
     return valid
 
-#@trace
+@trace
 def elapsed_time(f, args):
     time = [0,0,0]
     def _f(args):
