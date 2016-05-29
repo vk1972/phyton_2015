@@ -1,1 +1,24 @@
-1
+Write a decorator that stores the result of a function call and returns the cached version in 
+subsequent calls (with the same parameters) for x minutes, or y times whichever comes first.
+
+There is one script:
+fib_decorated.py
+
+Configuration params are at the bottom of file (no of mins, no of call cache is valid)
+
+Output file:
+decorated.txt   #could be deleted or renamed, script will create new one
+contains script execution trace
+trace loggs: cache hit|miss
+             function enter and exit
+                 fun: validate cache
+                 fun: execution times
+              value calculated
+              run number. (fibbonaci was run several times in row, to check cache functionality)
+Trace can be more exhaustive by removing comment in front annotation @trace for validate_cache and elapsed_time functions.
+But then log file grows realy big.
+
+script was tested on Ubuntu 12.4LTS, Python 2.7.3
+>cd decorator  #script should be run from containing folder
+>python fib_decorated.py  #if permisions are problem: sudo python fib_decorated.py
+
