@@ -214,7 +214,7 @@ def execute_fib_in_loop(change_fib_num):
 
 #path = os.path.join(os.getcwd(), 'Documents', 'decorator.txt')
 path = os.path.join(os.getcwd(), 'decorator.txt')
-sys.stdout = open(path, "w")
+sys.stdout = open(path, "w+")
 
 
 execute_fib_in_loop(False)
